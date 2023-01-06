@@ -57,8 +57,6 @@ const usePics = () => {
       if (hold.length === 2) {
         const pic1 = pics.find(({ id }) => id === hold.at(0));
         const pic2 = pics.find(({ id }) => id === hold.at(1));
-        console.log(pic1);
-        console.log(pic2);
         if (pic1.pic === pic2.pic) {
           setSolved((cur) => (cur.includes(pic1.id) ? cur : [...cur, pic1.id]));
           setSolved((cur) => (cur.includes(pic2.id) ? cur : [...cur, pic2.id]));
